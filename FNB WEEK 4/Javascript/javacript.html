@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Javascript</title>
+  </head>
+  <body>
+    <h1 id="heading1">Hello</h1>
+    <h2 id="heading" onclick="changeText()">Functions</h2>
+    <p id="paragraph1">Everyone</p>
+    <p id="paragraph2"></p>
+
+    <p id="output"></p>
+    <script>
+      function changeText() {
+        if (document.getElementById("heading").innerHTML == "Functions") {
+          document.getElementById("heading").innerHTML = "Is awesome";
+        } else {
+          document.getElementById("heading").innerHTML = "Functions";
+        }
+      }
+    </script>
+
+    <script>
+      var userInputPassword = "008";
+      var actualPassword = "007";
+
+      if (userInputPassword == actualPassword) {
+        document.getElementById("output").innerHTML = "Correct Password";
+      } else {
+        document.getElementById("output").innerHTML =
+          "Incorrect Password.Try again";
+      }
+
+      var text1;
+      var text2;
+      var text3;
+
+      var numbA = 7;
+      var numbB = 10;
+
+      text1 = "hello everyone";
+      text2 = "I love learning JS";
+      text3 = " Js is awesome";
+
+      document.getElementById("heading1").innerHTML = text1;
+      document.getElementById("paragraph1").innerHTML = text2 + text3;
+      document.getElementById("paragraph2").innerHTML =
+        "the answer is:" + numbA * numbB;
+    </script>
+
+    <script>
+      var userinputpassword = "007";
+      var actualpassword = "007";
+    </script>
+  </body>
+</html>

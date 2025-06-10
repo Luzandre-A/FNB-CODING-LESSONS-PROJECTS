@@ -1,0 +1,31 @@
+body {
+  background-color: rgb(255, 211, 245);
+}
+
+h1 {
+  color: blueviolet;
+  font-family: monospace;
+}
+p {
+  font-family: fantasy;
+}
+
+ul {
+  list-style-image: url("images/pointer-icon.png");
+}
+
+ol {
+  list-style-type: upper-roman;
+}
+a {
+  text-decoration: none;
+  background-color: blueviolet;
+}
+
+a:hover {
+  background-color: rgb(255, 0, 157);
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 5px;
+}

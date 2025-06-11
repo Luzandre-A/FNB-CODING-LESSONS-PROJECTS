@@ -11,15 +11,22 @@
     <h2 id="heading" onclick="changeText()">Functions</h2>
     <p id="paragraph1">Everyone</p>
     <p id="paragraph2"></p>
+    <p id="addition"></p>
+    <p id="outputText"></p>
 
     <p id="output"></p>
     <script>
+      document.getElementById("addition").innerHTML = addNumbers(18, 7);
       function changeText() {
         if (document.getElementById("heading").innerHTML == "Functions") {
           document.getElementById("heading").innerHTML = "Is awesome";
         } else {
           document.getElementById("heading").innerHTML = "Functions";
         }
+      }
+
+      function addNumbers(num1, num2) {
+        return num1 + num2;
       }
     </script>
 
@@ -54,6 +61,14 @@
     <script>
       var userinputpassword = "007";
       var actualpassword = "007";
+    </script>
+
+    <script>
+      someFunction();
+      function someFunction() {
+        var someVariable = 100;
+        document.getElementById("outputText").innerHTML = someVariable;
+      }
     </script>
   </body>
 </html>

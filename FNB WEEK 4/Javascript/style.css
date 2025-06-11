@@ -1,0 +1,27 @@
+a {
+  color: rgb(255, 3, 66);
+}
+p {
+  color: rgb(255, 0, 0);
+  text-align: center;
+}
+h3 {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 30px;
+}
+body {
+  text-align: center;
+  border: 5px solid rgb(0, 0, 0);
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px;
+  font-family: "Courier New", Courier, monospace;
+}
+script {
+  margin: 0 auto;
+}
+form {
+  margin: 0 auto;
+}
+/*===============SWITCH=============*/

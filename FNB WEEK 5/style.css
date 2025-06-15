@@ -1,0 +1,38 @@
+table {
+  color: rgb(92, 7, 71);
+  text-align: center;
+  border-collapse: collapse;
+  font: normal 3em Arial, Helvetica, sans-serif;
+  background-color: rgb(245, 178, 228);
+}
+body {
+  color: rgb(255, 25, 178);
+}
+tr {
+  height: 16.02vh;
+  background-color: rgb(255, 176, 235);
+}
+td {
+  width: 25vw;
+  border: 2px solid black;
+}
+
+#inputBox {
+  background-color: white;
+  text-align: center;
+  width: 98%;
+  font-size: 2em;
+  color: rgb(92, 7, 71);
+  border: 1px soild rgb(92, 7, 71);
+}
+
+.digitButton {
+  background-color: rgb(255, 176, 235);
+}
+
+.operatorBtn {
+  background-color: rgb(255, 134, 215);
+}
+.ACbutton {
+  background-color: rgb(255, 0, 242);
+}

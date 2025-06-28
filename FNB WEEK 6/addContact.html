@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Contacts</title>
+  </head>
+  <body>
+    <br />
+    <form id="editForm">
+      <label for="firstname"> First Name:</label>
+      <br />
+      <input type="text" name="firstname" id="firstname" />
+      <br />
+      <label for="lastname"> Last Name:</label>
+      <br />
+      <input type="text" name="lastname" id="lastname" />
+      <br />
+      <label for="mobile"> Mobile:</label>
+      <br />
+      <input type="text" name="mobile" id="mobile" />
+      <br />
+      <label for="email"> Email:</label>
+      <br />
+      <input type="text" name="email" id="email" />
+      <br /><br />
+      <label for="avatar"> Select a file</label>
+      <br />
+      <input type="file" name="avatar" id="avatar" />
+      <br />
+      <br />
+      <button type="submit" id="submitForm" class="pressbutton">Submit</button>
+      <br />
+    </form>
+    <br />
+    <button id="homeLink" type="button">Home</button>
+    <script src="config.js"></script>
+    <script>
+      document
+        .getElementById("submitForm")
+        .addEventListener("click", submitForm);
+      document.getElementById("homeLink").addEventListener("click", homeLink);
+
+      function submitForm(e) {
+        e.preventDefault();
+
+        const form = new FormData(document.querySelector("#editForm"));
+        form.append("apiKey", apiKey);
+
+        fetch(rootPath + "controller/insert-contact/", {
+          method: "POST",
+          headers: { Accept: "application/json, *.*" },
+          body: form,
+        })
+          .then(function (response) {
+            return response.text();
+          })
+          .then(function (data) {
+            if (data == "1") {
+              alert("Contact added.");
+              homeLink();
+            } else {
+              alert(data);
+              homeLink();
+            }
+          });
+      }
+
+      function homeLink() {
+        window.open("index.html", "_self");
+      }
+    </script>
+    <br />
+    <br />
+    <footer>
+      <a href="https://github.com/Luzandre-A"
+        >This app was built by Luzandre' Alberts</a
+      >
+    </footer>
+  </body>
+</html>

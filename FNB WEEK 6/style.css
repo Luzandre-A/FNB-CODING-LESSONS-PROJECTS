@@ -1,0 +1,38 @@
+body {
+  background-color: rgb(255, 199, 241);
+  text-align: center;
+  border: 2px solid black;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+
+  font-style: italic;
+}
+#table {
+  text-align: center;
+}
+label {
+  color: rgb(0, 0, 0);
+}
+button {
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(222, 187, 255);
+  transition: 200ms ease-in-out;
+}
+
+button:hover {
+  opacity: 9px;
+  color: rgb(255, 2, 196);
+  background-color: rgb(253, 253, 253);
+  cursor: grabbing;
+}
+img {
+  display: square;
+  margin: 0 auto;
+}
+a {
+  color: rgb(255, 1, 200);
+}
